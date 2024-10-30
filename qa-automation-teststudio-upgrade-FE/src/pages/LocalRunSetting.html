@@ -1,0 +1,113 @@
+<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+<style>
+    .container {
+        padding-top: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .inner-container {
+        padding-top: 5px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .col-lg-6 {
+        padding-right: 0px;
+    }
+    .panel-info .panel-heading {
+        font-weight: bold;
+    }
+    .panel-body ol {
+        padding-left: 15px;
+    }
+    .panel-body ul {
+        padding-left: 15px;
+    }
+</style>
+
+<div class="container">
+    <div class="inner-container">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2>Utilities</h2>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">Download Portal Framework Jar</div>
+                            <div class="panel-body">
+                                <p>Please download the file to execute test cases locally.</p>
+                            </div>
+                            <div class="panel-footer">
+                                <a id="PortalF" href="~/StaticFiles/Automation.zip">Download</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">Download Chrome Extension</div>
+                            <div class="panel-body">
+                                Please download the file to get the Chrome plugin for inspecting objects and creating test cases.
+                            </div>
+                            <div class="panel-footer">
+                                <a id="cebextension" href="~/StaticFiles/TN_automation_test_recorder.zip">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">Instruction</div>
+                        <div class="panel-body">
+                            <p>Please follow the instructions to execute test cases locally:</p>
+                            <ol>
+                                <li>Verify the JAR downloaded through the UI is placed under this folder: "C:\Automation\CEB_Final.jar".</li>
+                                <li>Verify config and driver files folders are placed under this folder: "C:\Automation".</li>
+                                <li>Check that the config folder contains the config.properties file, and the driver files folder has InternetExplorer.exe, Chrome.exe, and Firefox.exe files.</li>
+                                <li>If the above files and folders are found respectively, double-click the BAT file that has been downloaded to your computer so that execution will start on your machine.</li>
+                            </ol>
+                            <p>For screenshots, videos, and logs:</p>
+                            <ul>
+                                <li>Screenshots will be found in "C:\Automation\AutomatioNG_Reports\screenshot\browserName\TestRunID".</li>
+                                <li>Videos will be found in "C:\Automation\AutomatioNG_Reports\Videos\TestRunID".</li>
+                                <li>Logs will be found in "C:\Automation\LogFiles\TestRunID_TimeStamp".</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">Instruction</div>
+                        <div class="panel-body">
+                            <p>Please follow the instructions for installing the Chrome extension:</p>
+                            <ol>
+                                <li>Open "chrome://extensions/".</li>
+                                <li>Select the “Developer Mode” checkbox.</li>
+                                <li>Unzip the file.</li>
+                                <li>Click on the "Load unpacked extension" button.</li>
+                                <li>Select the folder, then click "OK".</li>
+                                <li>Ensure the CEB logo is showing in the top-right corner.</li>
+                            </ol>
+
+                            <p>Please follow the instructions for inspecting objects and creating test cases:</p>
+                            <ol>
+                                <li>Go to your application page.</li>
+                                <li>Right-click on any object and select "Inspect" (or press F12).</li>
+                                <li>Click on the CEB Inspector tab in the developer tools.</li>
+                                <li>Click on the red "On" button to change it to blue (located in the top-right corner).</li>
+                                <li>Provide a page name.</li>
+                                <li>To create a test case, click the "+" sign in the top-right corner.</li>
+                                <li>Enter your test case name and description in the green bar by selecting the radio button.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
